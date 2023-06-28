@@ -14,6 +14,9 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -35,13 +38,10 @@
                             <a class="nav-link" href="/">Inicio</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="">Nosotros</a>
+                            <a class="nav-link" href="#Nosotros">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="">Productos</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="">Galeria</a>
+                            <a class="nav-link" href="{{ route('productos') }}">Productos</a>
                         </li>
                     </ul>
 
@@ -122,12 +122,12 @@
         <main class="py-4">
             @yield('content')
         </main>
-        <footer class="py-4 bg-dark text-white-50">
+        <div id="wrapper" class="py-4 bg-dark text-white-50">
             <div class="container text-center">
                 <small>Ejemplo</small><br>
                 Copyright © {{ Date('Y') }} Ejemplo S.A. de C.V</a>. Todos los derechos reservados
             </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>

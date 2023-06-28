@@ -43,10 +43,52 @@
               <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
-        <div class="col-md-12 text-center my-5">
+        <div class="col-md-12 text-center my-5" id="Nosotros">
             <h2>Nosotros</h2>
             <p>Nosotros somos...</p>
         </div>
+        <div class="col-md-12 text-center mb-5">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Contactanos</h2>
+                    <br><br><br>
+                    <b>Correo electrónico:</b>
+                    <p></p><br>
+                    <b>Teléfono:</b>
+                    <p></p><br>
+                    <b>Dirección</b>
+                    <p></p><br>
+                    <b>Redes Sociales</b><br>
+                    <a class="btn btn-square btn-outline-ligth btn-social" href=""><i class="bi bi-facebook"></i></i></a>
+                    <a class="btn btn-square btn-outline-ligth btn-social" href=""><i class="bi bi-instagram"></i></i></a>
+                    <a class="btn btn-square btn-outline-ligth btn-social" href=""><i class="bi bi-twitter"></i></i></a>
+                    <a class="btn btn-square btn-outline-ligth btn-social" href=""><i class="bi bi-linkedin"></i></i></a>
+                </div>
+                <div class="col-6">
+                    <h2>Nos encontramos en:</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1634.7461289773141!2d-99.46966714380133!3d19.344335526247384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDIwJzM5LjYiTiA5OcKwMjgnMDYuMiJX!5e1!3m2!1ses-419!2smx!4v1687982765119!5m2!1ses-419!2smx" width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        {{-- <table class="default">
+            <tr>
+                <td>
+                    <div class="col-6">
+                        <h2>Contacto:</h2>
+                        <p>Telefono</p>
+                        <p>Direccion</p>
+                        <p>Correo</p>
+                        <p>Redes sociales</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="col-5">
+                        <h2>Nos encontramos en:</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1634.7461289773141!2d-99.46966714380133!3d19.344335526247384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDIwJzM5LjYiTiA5OcKwMjgnMDYuMiJX!5e1!3m2!1ses-419!2smx!4v1687982765119!5m2!1ses-419!2smx" width="300" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </td>
+            </tr>
+        </table> --}}
     </div>
     </div>
 </body>
