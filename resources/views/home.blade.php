@@ -47,6 +47,23 @@
             <h2>Nosotros</h2>
             <p>Nosotros somos...</p>
         </div>
+        <div class="col-md-12 text-center my-5" id="Productos">
+            <div class="row">
+                <h2>Productos</h2>
+                <div class="col-3">
+                    <p>Producto 1</p>
+                </div>
+                <div class="col-3">
+                    <p>Producto 2</p>
+                </div>
+                <div class="col-3">
+                    <p>Producto 3</p>
+                </div>
+                <div class="col-3">
+                    <p>Producto 4</p>
+                </div>
+            </div>
+        </div>
         <div class="col-md-12 text-center mb-5">
             <div class="row">
                 <div class="col-6">
