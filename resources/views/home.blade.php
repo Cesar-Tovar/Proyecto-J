@@ -48,20 +48,22 @@
             <p>Nosotros somos...</p>
         </div>
         <div class="col-md-12 text-center my-5" id="Productos">
-            <div class="row">
+            <div class="row align-items-center">
                 <h2>Productos</h2>
-                <div class="col-3">
-                    <p>Producto 1</p>
-                </div>
-                <div class="col-3">
-                    <p>Producto 2</p>
-                </div>
-                <div class="col-3">
-                    <p>Producto 3</p>
-                </div>
-                <div class="col-3">
-                    <p>Producto 4</p>
-                </div>
+                @foreach($prod as $pro)
+                    <div class="col-md-6 p-2 text-center col-sm-6 col-lg-4 col-xl-3">
+                        <div class="card mb-3 shadow mb-5 bg-white rounded">
+                            <div class="objetfitcover">
+                                <img src="{{ asset('archivos/' .$pro->imagen) }}" class="card-img-top img" alt="imagen">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><b>Nombre:{{$pro->nombre}}</b></p>
+                                <p class="card-text">Descripción:<br>{{$pro->descripcion}}</p>
+                                <p class="card-text">${{$pro->precio}}</p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
         <div class="col-md-12 text-center mb-5">
@@ -83,31 +85,12 @@
                 </div>
                 <div class="col-6">
                     <h2>Nos encontramos en:</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1634.7461289773141!2d-99.46966714380133!3d19.344335526247384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDIwJzM5LjYiTiA5OcKwMjgnMDYuMiJX!5e1!3m2!1ses-419!2smx!4v1687982765119!5m2!1ses-419!2smx" width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1634.7461289773141!2d-99.46966714380133!3d19.344335526247384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDIwJzM5LjYiTiA5OcKwMjgnMDYuMiJX!5e1!3m2!1ses-419!2smx!4v1687982765119!5m2!1ses-419!2smx"
+                    width="500" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-        {{-- <table class="default">
-            <tr>
-                <td>
-                    <div class="col-6">
-                        <h2>Contacto:</h2>
-                        <p>Telefono</p>
-                        <p>Direccion</p>
-                        <p>Correo</p>
-                        <p>Redes sociales</p>
-                    </div>
-                </td>
-                <td>
-                    <div class="col-5">
-                        <h2>Nos encontramos en:</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1634.7461289773141!2d-99.46966714380133!3d19.344335526247384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDIwJzM5LjYiTiA5OcKwMjgnMDYuMiJX!5e1!3m2!1ses-419!2smx!4v1687982765119!5m2!1ses-419!2smx" width="300" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </td>
-            </tr>
-        </table> --}}
     </div>
     </div>
 </body>
-
 @endsection

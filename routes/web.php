@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Productos;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +16,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $prod = Productos::latest()
+            ->take(4)
+            ->get();
+
+        return view('home')
+            ->with(['prod' => $prod]);
 });
 
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/productos', [App\Http\Controllers\ProductosController::class, 'productos'])->name('productos');
+Route::get('/productos', [App\Http\Controllers\ProductosController::class, 'lista'])->name('productos');

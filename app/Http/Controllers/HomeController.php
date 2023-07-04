@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Productos;
 
 class HomeController extends Controller
 {
@@ -21,8 +21,12 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
-    {
-        return view('home');
+    public function index() {
+        $prod = Productos::latest()
+            ->take(4)
+            ->get();
+
+        return view('home')
+            ->with(['prod' => $prod]);
     }
 }
