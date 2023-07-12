@@ -16,22 +16,14 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 <style>
-    .loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249);
-    opacity: .8;
-}
+
 </style>
 <body>
     <div class="loader"></div>
@@ -146,8 +138,3 @@
     </div>
 </body>
 </html>
-<script type="text/javascript">
-    $(window).load(function() {
-        $(".loader").fadeOut("fast");
-    });
-</script>
