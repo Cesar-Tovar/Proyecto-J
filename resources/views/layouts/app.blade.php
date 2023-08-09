@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Ejemplo') }}</title>
-    <link rel="icon" href="img/logo_icon.png">
+    <link rel="icon" href="{{ asset('img/logo.png') }}">
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -31,7 +31,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="{{ asset('imglogo_icon.jpeg') }}" width="200">
+                    <img src="{{ asset('img/logo.png') }}" width="50">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -131,8 +131,8 @@
         </main>
         <div id="wrapper" class="py-4 bg-dark text-white-50">
             <div class="container text-center">
-                <small>Ejemplo</small><br>
-                Copyright © {{ Date('Y') }} Ejemplo S.A. de C.V</a>. Todos los derechos reservados
+                <small>Fulkat</small><br>
+                Copyright © {{ Date('Y') }} Fulkat S.A. de C.V</a>. Todos los derechos reservados
             </div>
         </div>
     </div>
